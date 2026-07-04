@@ -1,13 +1,18 @@
-# junokd02 site
+# junokd02.com 업그레이드 프로젝트
 
-준오헤어 건대역2호점 안내 사이트 복원본입니다.
+## 포함된 기능
+- 메인 페이지
+- 시술 상세 페이지: /services
+- 외국인 전용 예약 안내 페이지: /foreign
+- Google Analytics 방문자 통계 준비
+- robots.txt / sitemap.xml
+- Vercel 직접 주소 접속 대응 vercel.json
 
-## GitHub에 올리는 법
-1. 이 ZIP을 압축 해제합니다.
-2. 안에 있는 파일/폴더 전체를 GitHub 저장소에 업로드합니다.
-3. ZIP 파일 자체를 올리지 마세요.
+## 방문자 통계 연결
+Vercel > 프로젝트 > Settings > Environment Variables 에서
+VITE_GA_ID = 구글 애널리틱스 측정 ID 를 추가하세요.
+예: G-XXXXXXXXXX
+추가 후 Redeploy 해야 적용됩니다.
 
-## Vercel 설정
-- Framework Preset: Vite
-- Build Command: npm run build
-- Output Directory: dist
+## GitHub 업로드
+ZIP 자체가 아니라 압축을 푼 안의 모든 파일과 폴더를 업로드하세요.
